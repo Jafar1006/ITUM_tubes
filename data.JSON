@@ -43,16 +43,16 @@
       "alt": "A unique and artistic floral design with exotic flowers."
     },
     {
-        "id": 5,
-        "name": "Dendrobium Laxiflorum",
-        "image": "assets/DendrobiumLaxiflorum.jpg",
-        "alt": "gyg"
+      "id": 5,
+      "name": "Dendrobium Laxiflorum",
+      "image": "assets/DendrobiumLaxiflorum.jpg",
+      "alt": "gyg"
     },
     {
-        "id": 6,
-        "name": "Pescatorea Coronaria",
-        "image": "assets/PescatoreaCoronaria.jpg",
-        "alt":"ygy"
+      "id": 6,
+      "name": "Pescatorea Coronaria",
+      "image": "assets/PescatoreaCoronaria.jpg",
+      "alt":"ygy"
     }
   ],
   "about": {
