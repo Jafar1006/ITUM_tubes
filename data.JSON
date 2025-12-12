@@ -2,7 +2,7 @@
   "siteInfo": {
     "title": "Zaidan Orchid",
     "description": "Artfully Crafted Floral Designs",
-    "heroImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuBPBVcpHSSUF6bzVcmhwZU7i3Sz7HwhNZqrBtQ0A8_oKI0xQ3UN3FIOwAE6i9cx7iWXWp6ewArLp4mWUc4LzKOFsgJboWR9oRzBMZvv4fPilAOBKmNe27S6g-7vfUovQzP5AlPWdsbbx1gI-LLoyv_iSjQJmdih1YdJ5Ch8k3jyuv2ThFP4FOj2QPhFMSRLXjUfrMnaTLMIKNZxzHDhq-8lQc7VjVLL1RPKqmLztdKFVKTiIi9iaCovlhrvMxX7wwIhMHrvhBy8IgI",
+    "heroImage": "assets/hero-bg.jpg", 
     "logoColor": "#363E1B"
   },
   "socialLinks": [
@@ -46,13 +46,13 @@
       "id": 5,
       "name": "Dendrobium Laxiflorum",
       "image": "assets/DendrobiumLaxiflorum.jpg",
-      "alt": "Bunga anggrek Dendrobium Laxiflorum berwarna krem kekuningan yang cantik." 
+      "alt": "Anggrek Dendrobium Laxiflorum yang mekar indah."
     },
     {
       "id": 6,
       "name": "Pescatorea Coronaria",
       "image": "assets/PescatoreaCoronaria.jpg",
-      "alt": "Anggrek Pescatorea Coronaria dengan kelopak ungu kemerahan dan putih."
+      "alt": "Anggrek Pescatorea Coronaria dengan warna ungu yang khas."
     }
   ],
   "about": {
@@ -69,6 +69,6 @@
       "weekdays": "Mon - Sat: 9am - 6pm",
       "weekend": "Sun: 11am - 4pm"
     },
-    "mapEmbed": "https://maps.google.com/maps?q=Jl.+Raya+Maribaya+No.+105,+Langensari,+Lembang&t=&z=15&ie=UTF8&iwloc=&output=embed"
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.5758422345!2d107.638!3d-6.82!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNDknMTIuMCJTIDEwN8KwMzgnMTcuMCJF!5e0!3m2!1sen!2sid!4v1"
   }
 }
