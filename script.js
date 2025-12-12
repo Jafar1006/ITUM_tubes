@@ -44,7 +44,7 @@ function renderProducts(products) {
 // Fungsi utama untuk memuat data
 async function loadData() {
     try {
-        const response = await fetch('data.JSON');
+        const response = await fetch('data.json');
         const data = await response.json();
         
         allProducts = data.products;
