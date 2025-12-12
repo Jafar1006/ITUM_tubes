@@ -46,13 +46,13 @@
       "id": 5,
       "name": "Dendrobium Laxiflorum",
       "image": "assets/DendrobiumLaxiflorum.jpg",
-      "alt": "gyg"
+      "alt": "Bunga anggrek Dendrobium Laxiflorum berwarna krem kekuningan yang cantik." 
     },
     {
       "id": 6,
       "name": "Pescatorea Coronaria",
       "image": "assets/PescatoreaCoronaria.jpg",
-      "alt":"ygy"
+      "alt": "Anggrek Pescatorea Coronaria dengan kelopak ungu kemerahan dan putih."
     }
   ],
   "about": {
