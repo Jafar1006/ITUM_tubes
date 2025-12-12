@@ -11,8 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     
     <link rel="stylesheet" href="style.css">
-    
-    <script src="script.js"></script>
 </head>
 <body class="bg-background-light dark:bg-background-dark">
 <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
@@ -27,40 +25,14 @@
                 </div>
                 <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Zaidan Orchid</h2>
             </div>
-
             <nav class="hidden md:flex items-center gap-9">
                 <a class="text-sm font-medium leading-normal text-gray-800 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#work">Our Work</a>
                 <a class="text-sm font-medium leading-normal text-gray-800 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#about">About Us</a>
                 <a class="text-sm font-medium leading-normal text-gray-800 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#kunjungi">Kunjungi</a>
-                
-                <div class="relative dropdown group">
-                    <button class="flex items-center gap-1 text-sm font-medium leading-normal text-gray-800 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors focus:outline-none">
-                        Social
-                        <span class="material-symbols-outlined text-sm pt-0.5">expand_more</span>
-                    </button>
-                    <div class="dropdown-menu absolute right-0 top-full pt-2 hidden w-40">
-                        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl border border-gray-100 dark:border-gray-700 overflow-hidden">
-                            <a href="https://www.tiktok.com/@zaidan.orchid" target="_blank" class="block px-4 py-3 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary transition-colors border-b border-gray-100 dark:border-gray-700">
-                                <div class="flex items-center gap-2">
-                                    TikTok
-                                </div>
-                            </a>
-                            <a href="https://web.facebook.com/zaidan.orchid/?_rdc=1&_rdr#" target="_blank" class="block px-4 py-3 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary transition-colors">
-                                <div class="flex items-center gap-2">
-                                    Facebook
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </nav>
-
             <div class="flex items-center gap-4">
                 <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors shadow-sm">
                     <span class="truncate">Place Order</span>
-                </button>
-                <button class="md:hidden p-2 rounded-md text-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                    <span class="material-symbols-outlined">menu</span>
                 </button>
             </div>
         </header>
@@ -77,9 +49,6 @@
                                 Welcome to Zaidan Orchid, where every petal tells a story. Discover our passion for creating beautiful moments with nature's finest.
                             </p>
                         </div>
-                        <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
-                            <span class="truncate">Explore Our Gallery</span>
-                        </button>
                     </div>
                 </div>
             </section>
@@ -87,76 +56,44 @@
             <section class="py-10 px-4 sm:px-8 lg:px-10" id="work">
                 <div class="max-w-5xl mx-auto">
                     <h2 class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-4 pt-5">Our Work</h2>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-4">
-                        <div class="bg-cover bg-center flex flex-col gap-3 rounded-lg justify-end p-4 aspect-[3/4]" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), url("assets/CattleyaZaidanesia.jpg");'>
-                            <p class="text-white text-base font-bold leading-tight line-clamp-2">Cattleya Zaidanesia</p>
+                    
+                    <div id="product-grid" class="grid grid-cols-2 md:grid-cols-4 gap-4 p-4">
                         </div>
-                        <div class="bg-cover bg-center flex flex-col gap-3 rounded-lg justify-end p-4 aspect-[3/4]" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), url("assets/PhalaenopsisHonghenensis.jpg");'>
-                            <p class="text-white text-base font-bold leading-tight line-clamp-2">Phalaenopsis Honghenensis</p>
-                        </div>
-                        <div class="bg-cover bg-center flex flex-col gap-3 rounded-lg justify-end p-4 aspect-[3/4]" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), url("assets/PhalaenopsisBedfordBelle.jpg");'>
-                            <p class="text-white text-base font-bold leading-tight line-clamp-2">Phalaenopsis Bedford Belle</p>
-                        </div>
-                        <div class="bg-cover bg-center flex flex-col gap-3 rounded-lg justify-end p-4 aspect-[3/4]" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), url("assets/PhalaenopsisCorona.jpg");'>
-                            <p class="text-white text-base font-bold leading-tight line-clamp-2">Phalaenopsis Corona</p>
-                        </div>
+
+                    <div class="flex justify-center mt-6">
+                        <button id="load-more-btn" class="hidden px-6 py-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white font-bold rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">
+                            Load More
+                        </button>
                     </div>
                 </div>
             </section>
 
             <section class="py-10 px-4 sm:px-8 lg:px-10" id="about">
-                <div class="max-w-5xl mx-auto">
-                    <h2 class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-4 pt-5">About Us</h2>
-                    <div class="grid md:grid-cols-2 gap-8 items-center p-4">
-                        <div class="w-full">
-                            <img class="w-full h-auto rounded-lg shadow-lg" src="assets/ZaidanOrchid.jpeg" alt="Toko Bunga Zaidan Orchid"/>
-                        </div>
-                        <div class="flex flex-col gap-4 text-gray-700 dark:text-gray-300">
-                            <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Zaidan Orchid</h3>
-                            <p class="text-base leading-relaxed">Zaidan Orchid lahir dari kecintaan pada dunia anggrek dan keinginan untuk menghadirkan keindahan alami ke lebih banyak orang. Di rumah tanam kami, setiap anggrek dirawat dengan teliti sejak masih kecil hingga siap dipindahkan ke rumah baru. Kami percaya bahwa anggrek bukan hanya tanaman hias, tetapi juga pelengkap suasana yang membawa ketenangan dan keanggunan.</p>
-                        </div>
-                    </div>
-                </div>
+               <div class="max-w-5xl mx-auto">
+                   <h2 class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-4 pt-5">About Us</h2>
+                   <div class="grid md:grid-cols-2 gap-8 items-center p-4">
+                       <div class="w-full">
+                           <img class="w-full h-auto rounded-lg shadow-lg" src="assets/ZaidanOrchid.jpeg" alt="Toko Bunga Zaidan Orchid"/>
+                       </div>
+                       <div class="flex flex-col gap-4 text-gray-700 dark:text-gray-300">
+                           <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Zaidan Orchid</h3>
+                           <p class="text-base leading-relaxed">Zaidan Orchid lahir dari kecintaan pada dunia anggrek dan keinginan untuk menghadirkan keindahan alami ke lebih banyak orang.</p>
+                       </div>
+                   </div>
+               </div>
             </section>
-
+            
             <section class="py-10 px-4 sm:px-8 lg:px-10 bg-background-light dark:bg-background-dark" id="kunjungi">
-                <div class="max-w-5xl mx-auto">
-                    <h2 class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-4 pt-5 text-center">Visit & Connect</h2>
-                    <div class="grid md:grid-cols-2 gap-8 mt-6">
-                        <div class="w-full h-96 rounded-lg overflow-hidden relative shadow-md">
-                            <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" loading="lazy" src="https://maps.google.com/maps?q=Jl.+Raya+Maribaya+No.+105,+Langensari,+Lembang&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
-                        </div>
-                        <div class="flex flex-col justify-center gap-6 p-4">
-                            <div class="flex items-start gap-4">
-                                <span class="material-symbols-outlined text-primary mt-1">location_on</span>
-                                <div>
-                                    <h4 class="font-bold text-gray-900 dark:text-white">Address</h4>
-                                    <a href="https://www.google.com/maps/place/Jl.+Maribaya+No.105,+Langensari,+Kec.+Lembang,+Kabupaten+Bandung+Barat,+Jawa+Barat+40391,+Indonesia/@-6.8252323,107.6394501,18.43z/data=!4m6!3m5!1s0x2e68e0c217e73ff5:0xeebeb4085854bc46!8m2!3d-6.8254922!4d107.6384325!16s%2Fg%2F11h8bs30b8?hl=en-US&entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D">
-                                        <p class="text-gray-700 dark:text-gray-300">Jl. Raya Maribaya No. 105, Langensari,<br>Kec. Lembang, Kab. Bandung Barat,<br>Jawa Barat 40391</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-4">
-                                <span class="material-symbols-outlined text-primary mt-1">call</span>
-                                <div>
-                                    <h4 class="font-bold text-gray-900 dark:text-white">Phone</h4>
-                                    <a href="https://wa.me/6287822194264">
-                                        <p class="text-gray-700 dark:text-gray-300">+62 878-2219-4264</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
+                </section>
 
+        </main>
         <footer class="bg-gray-100 dark:bg-gray-900 py-8 px-4 sm:px-8 lg:px-10">
             <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
                 <p class="text-sm text-gray-600 dark:text-gray-400">© 2024 Zaidan Orchid. All Rights Reserved.</p>
-                </div>
+            </div>
         </footer>
     </div>
 </div>
+<script src="script.js"></script>
 </body>
 </html>

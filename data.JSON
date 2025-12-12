@@ -45,8 +45,14 @@
     {
         "id": 5,
         "name": "Dendrobium Laxiflorum",
-        "image": "assets/DendrobiumLaxiflorum.jpg"
-        
+        "image": "assets/DendrobiumLaxiflorum.jpg",
+        "alt": ""
+    },
+    {
+        "id": 6,
+        "name": "Pescatorea Coronaria",
+        "image": "assets/PescatoreaCoronaria",
+        "alt": ""
     }
   ],
   "about": {
