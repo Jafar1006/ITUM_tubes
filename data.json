@@ -55,11 +55,26 @@
       "alt": "Anggrek Pescatorea Coronaria dengan warna ungu yang khas."
     }
   ],
-  "about": {
-    "title": "Tentang Kami",
-    "image": "assets/ZaidanOrchid.jpeg",
-    "description": "Zaidan Orchid lahir dari kecintaan pada dunia anggrek dan keinginan untuk menghadirkan keindahan alami ke lebih banyak orang. Di rumah tanam kami, setiap anggrek dirawat dengan teliti sejak masih kecil hingga siap dipindahkan ke rumah baru. Kami percaya bahwa anggrek bukan hanya tanaman hias, tetapi juga pelengkap suasana yang membawa ketenangan dan keanggunan. Melalui dedikasi dan perawatan yang konsisten, kami berkomitmen menyediakan anggrek sehat dan berkualitas untuk memperindah setiap ruang Anda."
-  },
+  "aboutSlides": [
+    {
+      "id": 1,
+      "title": "Tentang Kami",
+      "image": "assets/AboutUS.jpeg",
+      "description": "Zaidan Orchid lahir dari kecintaan pada dunia anggrek dan keinginan untuk menghadirkan keindahan alami ke lebih banyak orang. Di rumah tanam kami, setiap anggrek dirawat dengan teliti sejak masih kecil hingga siap dipindahkan ke rumah baru."
+    },
+    {
+      "id": 2,
+      "title": "Visi & Passion",
+      "image": "assets/CattleyaZaidanesia.jpg", 
+      "description": "Kami percaya bahwa anggrek bukan hanya tanaman hias, tetapi juga pelengkap suasana yang membawa ketenangan dan keanggunan. Melalui dedikasi dan perawatan yang konsisten, kami berkomitmen menyediakan anggrek sehat dan berkualitas untuk memperindah setiap ruang Anda."
+    },
+    {
+      "id": 3,
+      "title": "Kualitas Terbaik",
+      "image": "assets/PhalaenopsisCorona.jpg",
+      "description": "Setiap bibit dipilih dengan standar tinggi untuk memastikan pelanggan mendapatkan varietas terbaik yang tahan lama dan memiliki warna yang memukau. Kepuasan pelanggan adalah prioritas utama kami dalam setiap tangkai yang kami tanam."
+    }
+  ],
   "contact": {
     "address": "Jl. Raya Maribaya No. 105, Langensari, Kec. Lembang, Kab. Bandung Barat, Jawa Barat 40391",
     "phone": "+62 878-2219-4264",
@@ -69,6 +84,6 @@
       "weekdays": "Mon - Sat: 9am - 6pm",
       "weekend": "Sun: 11am - 4pm"
     },
-    "mapEmbed": "https://www.google.com/maps/place/Ag+orchid+%26+craft/@-6.8234282,107.641571,17z/data=!4m15!1m8!3m7!1s0x2e68e0c217e73ff5:0xeebeb4085854bc46!2sJl.+Maribaya+No.105,+Langensari,+Kec.+Lembang,+Kabupaten+Bandung+Barat,+Jawa+Barat+40391,+Indonesia!3b1!8m2!3d-6.8254922!4d107.6384325!16s%2Fg%2F11h8bs30b8!3m5!1s0x2e68e181401d61b3:0x197977a398e1491e!8m2!3d-6.8235063!4d107.6400019!16s%2Fg%2F11h1md9khn?hl=en-US&entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15846.165586681082!2d107.62813277542591!3d-6.825492295183522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e181401d61b3%3A0x197977a398e1491e!2sAg%20orchid%20%26%20craft!5e0!3m2!1sen!2sus!4v1765791887117!5m2!1sen!2sus"
   }
 }
