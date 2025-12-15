@@ -11,54 +11,83 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     
     <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#363E1B",
+                        "background-light": "#F7F8F3",
+                        "background-dark": "#1C200E",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+                    },
+                },
+            },
+        };
+    </script>
 </head>
-<body class="bg-background-light dark:bg-background-dark">
+<body class="bg-background-light dark:bg-background-dark font-display">
 <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
     <div class="layout-container flex h-full grow flex-col">
         
-        <header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-gray-200/80 dark:border-gray-800/80 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md px-4 sm:px-8 lg:px-10 py-3 shadow-md">
-            <div class="flex items-center gap-4 text-gray-900 dark:text-white">
-                <div class="size-6 text-primary">
-                    <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                        <path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
-                    </svg>
+        <header class="sticky top-0 z-50 w-full border-b border-gray-200/80 dark:border-gray-800/80 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md shadow-sm">
+            <div class="flex items-center justify-between px-4 sm:px-8 lg:px-10 py-3">
+                <div class="flex items-center gap-4 text-gray-900 dark:text-white">
+                    <div class="size-6 text-primary">
+                        <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Zaidan Orchid</h2>
                 </div>
-                <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Zaidan Orchid</h2>
-            </div>
 
-            <nav class="hidden md:flex items-center gap-9">
-                <a class="text-sm font-medium leading-normal text-gray-800 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#work">Our Work</a>
-                <a class="text-sm font-medium leading-normal text-gray-800 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#about">About Us</a>
-                <a class="text-sm font-medium leading-normal text-gray-800 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#kunjungi">Kunjungi</a>
-                
-                <div class="relative dropdown group">
-                    <button class="flex items-center gap-1 text-sm font-medium leading-normal text-gray-800 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors focus:outline-none">
-                        Social
-                        <span class="material-symbols-outlined text-sm pt-0.5">expand_more</span>
-                    </button>
-                    <div class="dropdown-menu absolute right-0 top-full pt-2 hidden w-40">
-                        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl border border-gray-100 dark:border-gray-700 overflow-hidden">
-                            <a href="https://www.tiktok.com/@zaidan.orchid" target="_blank" class="block px-4 py-3 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary transition-colors border-b border-gray-100 dark:border-gray-700">
-                                <div class="flex items-center gap-2">
-                                    TikTok
-                                </div>
-                            </a>
-                            <a href="https://web.facebook.com/zaidan.orchid/?_rdc=1&_rdr#" target="_blank" class="block px-4 py-3 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary transition-colors">
-                                <div class="flex items-center gap-2">
-                                    Facebook
-                                </div>
-                            </a>
+                <nav class="hidden md:flex items-center gap-9">
+                    <a class="text-sm font-medium leading-normal text-gray-800 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#work">Our Work</a>
+                    <a class="text-sm font-medium leading-normal text-gray-800 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#about">About Us</a>
+                    <a class="text-sm font-medium leading-normal text-gray-800 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#kunjungi">Kunjungi</a>
+                    
+                    <div class="relative dropdown group">
+                        <button class="flex items-center gap-1 text-sm font-medium leading-normal text-gray-800 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors focus:outline-none">
+                            Social
+                            <span class="material-symbols-outlined text-sm pt-0.5">expand_more</span>
+                        </button>
+                        <div class="dropdown-menu absolute right-0 top-full pt-2 hidden w-40">
+                            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl border border-gray-100 dark:border-gray-700 overflow-hidden">
+                                <a href="https://www.tiktok.com/@zaidan.orchid" target="_blank" class="block px-4 py-3 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary transition-colors border-b border-gray-100 dark:border-gray-700">
+                                    <div class="flex items-center gap-2">TikTok</div>
+                                </a>
+                                <a href="https://web.facebook.com/zaidan.orchid/?_rdc=1&_rdr#" target="_blank" class="block px-4 py-3 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-primary transition-colors">
+                                    <div class="flex items-center gap-2">Facebook</div>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
 
-            <div class="flex items-center gap-4">
-                <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors shadow-sm">
-                    <span class="truncate">Place Order</span>
-                </button>
-                <button class="md:hidden p-2 rounded-md text-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                    <span class="material-symbols-outlined">menu</span>
+                <div class="flex items-center gap-4">
+                    <button class="hidden sm:flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors shadow-sm">
+                        <span class="truncate">Place Order</span>
+                    </button>
+                    <button id="mobile-menu-btn" class="md:hidden p-2 rounded-md text-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 shadow-lg flex flex-col p-4 gap-4 z-40 transition-all">
+                <a class="block w-full py-2 text-base font-medium text-gray-800 dark:text-gray-300 border-b border-gray-100 dark:border-gray-800" href="#work">Our Work</a>
+                <a class="block w-full py-2 text-base font-medium text-gray-800 dark:text-gray-300 border-b border-gray-100 dark:border-gray-800" href="#about">About Us</a>
+                <a class="block w-full py-2 text-base font-medium text-gray-800 dark:text-gray-300 border-b border-gray-100 dark:border-gray-800" href="#kunjungi">Kunjungi</a>
+                <div class="flex flex-col gap-2 pt-2">
+                    <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">Social Media</span>
+                    <a href="https://www.tiktok.com/@zaidan.orchid" target="_blank" class="text-sm text-gray-700 dark:text-gray-400 hover:text-primary">TikTok</a>
+                    <a href="https://web.facebook.com/zaidan.orchid/?_rdc=1&_rdr#" target="_blank" class="text-sm text-gray-700 dark:text-gray-400 hover:text-primary">Facebook</a>
+                </div>
+                <button class="w-full mt-2 cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-colors">
+                    Place Order
                 </button>
             </div>
         </header>
@@ -66,12 +95,12 @@
         <main class="flex-1">
             <section class="py-10 px-4 sm:px-8 lg:px-10">
                 <div class="max-w-5xl mx-auto">
-                    <div class="flex min-h-[60vh] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-xl items-center justify-center p-8 text-center" style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPBVcpHSSUF6bzVcmhwZU7i3Sz7HwhNZqrBtQ0A8_oKI0xQ3UN3FIOwAE6i9cx7iWXWp6ewArLp4mWUc4LzKOFsgJboWR9oRzBMZvv4fPilAOBKmNe27S6g-7vfUovQzP5AlPWdsbbx1gI-LLoyv_iSjQJmdih1YdJ5Ch8k3jyuv2ThFP4FOj2QPhFMSRLXjUfrMnaTLMIKNZxzHDhq-8lQc7VjVLL1RPKqmLztdKFVKTiIi9iaCovlhrvMxX7wwIhMHrvhBy8IgI");'>
+                    <div class="flex min-h-[50vh] md:min-h-[60vh] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-xl items-center justify-center p-8 text-center" style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPBVcpHSSUF6bzVcmhwZU7i3Sz7HwhNZqrBtQ0A8_oKI0xQ3UN3FIOwAE6i9cx7iWXWp6ewArLp4mWUc4LzKOFsgJboWR9oRzBMZvv4fPilAOBKmNe27S6g-7vfUovQzP5AlPWdsbbx1gI-LLoyv_iSjQJmdih1YdJ5Ch8k3jyuv2ThFP4FOj2QPhFMSRLXjUfrMnaTLMIKNZxzHDhq-8lQc7VjVLL1RPKqmLztdKFVKTiIi9iaCovlhrvMxX7wwIhMHrvhBy8IgI");'>
                         <div class="flex flex-col gap-4 max-w-2xl">
-                            <h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] md:text-6xl">
+                            <h1 class="text-white text-3xl md:text-6xl font-black leading-tight tracking-[-0.033em]">
                                 Artfully Crafted Floral Designs
                             </h1>
-                            <p class="text-white text-base font-normal leading-normal md:text-lg">
+                            <p class="text-white text-sm md:text-lg font-normal leading-normal">
                                 Welcome to Zaidan Orchid, where every petal tells a story. Discover our passion for creating beautiful moments with nature's finest.
                             </p>
                         </div>
@@ -86,7 +115,7 @@
                 <div class="max-w-5xl mx-auto">
                     <h2 class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-4 pt-5">Our Work</h2>
                     
-                    <div id="product-grid" class="grid grid-cols-2 md:grid-cols-4 gap-4 p-4">
+                    <div id="product-grid" class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 p-4">
                         </div>
 
                     <div class="flex justify-center mt-6">
@@ -106,7 +135,7 @@
                         </div>
                         <div class="flex flex-col gap-4 text-gray-700 dark:text-gray-300">
                             <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Zaidan Orchid</h3>
-                            <p class="text-base leading-relaxed">Zaidan Orchid lahir dari kecintaan pada dunia anggrek dan keinginan untuk menghadirkan keindahan alami ke lebih banyak orang. Di rumah tanam kami, setiap anggrek dirawat dengan teliti sejak masih kecil hingga siap dipindahkan ke rumah baru. Kami percaya bahwa anggrek bukan hanya tanaman hias, tetapi juga pelengkap suasana yang membawa ketenangan dan keanggunan. Melalui dedikasi dan perawatan yang konsisten, kami berkomitmen menyediakan anggrek sehat dan berkualitas untuk memperindah setiap ruang Anda.</p>
+                            <p class="text-base leading-relaxed text-justify">Zaidan Orchid lahir dari kecintaan pada dunia anggrek dan keinginan untuk menghadirkan keindahan alami ke lebih banyak orang. Di rumah tanam kami, setiap anggrek dirawat dengan teliti sejak masih kecil hingga siap dipindahkan ke rumah baru.</p>
                         </div>
                     </div>
                 </div>
@@ -116,7 +145,7 @@
                 <div class="max-w-5xl mx-auto">
                     <h2 class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-4 pt-5 text-center">Visit & Connect</h2>
                     <div class="grid md:grid-cols-2 gap-8 mt-6">
-                        <div class="w-full h-96 rounded-lg overflow-hidden relative shadow-md">
+                        <div class="w-full h-80 md:h-96 rounded-lg overflow-hidden relative shadow-md">
                             <iframe 
                                 width="100%" 
                                 height="100%" 
@@ -125,7 +154,7 @@
                                 marginheight="0" 
                                 marginwidth="0" 
                                 loading="lazy"
-                                src="https://maps.google.com/maps?q=Jl.+Raya+Maribaya+No.+105,+Langensari,+Lembang&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                                src="https://www.google.com/maps/place/Ag+orchid+%26+craft/@-6.8234282,107.641571,17z/data=!4m15!1m8!3m7!1s0x2e68e0c217e73ff5:0xeebeb4085854bc46!2sJl.+Maribaya+No.105,+Langensari,+Kec.+Lembang,+Kabupaten+Bandung+Barat,+Jawa+Barat+40391,+Indonesia!3b1!8m2!3d-6.8254922!4d107.6384325!16s%2Fg%2F11h8bs30b8!3m5!1s0x2e68e181401d61b3:0x197977a398e1491e!8m2!3d-6.8235063!4d107.6400019!16s%2Fg%2F11h1md9khn?hl=en-US&entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D">
                             </iframe>
                         </div>
                         <div class="flex flex-col justify-center gap-6 p-4">
@@ -133,7 +162,7 @@
                                 <span class="material-symbols-outlined text-primary mt-1">location_on</span>
                                 <div>
                                     <h4 class="font-bold text-gray-900 dark:text-white">Address</h4>
-                                    <p class="text-gray-700 dark:text-gray-300">Jl. Raya Maribaya No. 105, Langensari,<br>Kec. Lembang, Kab. Bandung Barat,<br>Jawa Barat 40391</p>
+                                    <p class="text-gray-700 dark:text-gray-300 text-sm">Jl. Raya Maribaya No. 105, Langensari,<br>Kec. Lembang, Kab. Bandung Barat,<br>Jawa Barat 40391</p>
                                 </div>
                             </div>
                             <div class="flex items-start gap-4">
@@ -145,21 +174,6 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="flex items-start gap-4">
-                                <span class="material-symbols-outlined text-primary mt-1">email</span>
-                                <div>
-                                    <h4 class="font-bold text-gray-900 dark:text-white">Email</h4>
-                                    <p class="text-gray-700 dark:text-gray-300">hello@zaidanorchid.com</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-4">
-                                <span class="material-symbols-outlined text-primary mt-1">schedule</span>
-                                <div>
-                                    <h4 class="font-bold text-gray-900 dark:text-white">Hours</h4>
-                                    <p class="text-gray-700 dark:text-gray-300">Mon - Sat: 9am - 6pm</p>
-                                    <p class="text-gray-700 dark:text-gray-300">Sun: 11am - 4pm</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -167,14 +181,14 @@
         </main>
 
         <footer class="bg-gray-100 dark:bg-gray-900 py-8 px-4 sm:px-8 lg:px-10">
-            <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
                 <p class="text-sm text-gray-600 dark:text-gray-400">© 2024 Zaidan Orchid. All Rights Reserved.</p>
                 <div class="flex items-center gap-4">
-                    <a class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary" href="https://web.facebook.com/zaidan.orchid/?_rdc=1&_rdr#" target="_blank">
+                    <a class="text-gray-600 dark:text-gray-400 hover:text-primary" href="https://web.facebook.com/zaidan.orchid/?_rdc=1&_rdr#" target="_blank">
                         <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
                     </a>
-                    <a class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary" href="https://vt.tiktok.com/ZSjQtg27P/" target="_blank">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 1 0 1-.22V21h3.45V4.26a4.86 4.86 0 0 0 3.77 1.83v-3.4a1 1 0 0 0 .01 4z"/></svg>
+                    <a class="text-gray-600 dark:text-gray-400 hover:text-primary" href="https://vt.tiktok.com/ZSjQtg27P/" target="_blank">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 1 0 1-.22V21h3.45V4.26a4.86 4.86 0 0 0 3.77 1.83v-3.4a1 1 0 0 0 .01 4z"/></svg>
                     </a>
                 </div>
             </div>
@@ -183,6 +197,5 @@
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
