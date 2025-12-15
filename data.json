@@ -2,19 +2,32 @@
   "siteInfo": {
     "title": "Zaidan Orchid",
     "description": "Artfully Crafted Floral Designs",
-    "heroImage": "assets/hero-bg.jpg", 
     "logoColor": "#363E1B"
   },
+  "heroSlides": [
+    {
+      "id": 1,
+      "image": "assets/section1.jpeg",
+      "title": "Artfully Crafted Floral Designs",
+      "subtitle": "Welcome to Zaidan Orchid, where every petal tells a story. Discover our passion for creating beautiful moments with nature's finest.",
+      "ctaText": "Explore Our Gallery"
+    },
+    {
+      "id": 2,
+      "image": "assets/section2.jpeg",
+      "title": "Nature's Elegance in Your Home",
+      "subtitle": "Bring the serenity of nature indoors with our premium orchid collection. Hand-picked and cared for with love.",
+      "ctaText": "View Collections"
+    }
+  ],
   "socialLinks": [
     {
       "platform": "TikTok",
-      "url": "https://www.tiktok.com/@zaidan.orchid",
-      "icon": "assets/icons/tiktok.svg"
+      "url": "https://www.tiktok.com/@zaidan.orchid"
     },
     {
       "platform": "Facebook",
-      "url": "https://web.facebook.com/zaidan.orchid/?_rdc=1&_rdr#",
-      "icon": "assets/icons/facebook.svg"
+      "url": "https://web.facebook.com/zaidan.orchid/?_rdc=1&_rdr#"
     }
   ],
   "products": [

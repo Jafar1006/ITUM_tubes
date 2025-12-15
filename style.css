@@ -1,8 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
+
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-/* CSS Tambahan untuk Dropdown Sederhana */
+/* Custom Navigation Swiper */
+.swiper-button-next, .swiper-button-prev {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #363E1B !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 18px !important;
+    font-weight: bold;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: #363E1B;
+    color: white !important;
+}
+
+.dark .swiper-button-next, .dark .swiper-button-prev {
+    background-color: rgba(31, 41, 55, 0.9);
+    color: white !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #363E1B !important;
+}
+
+/* Animasi Text Hero Slide */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeInUp {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.delay-100 {
+    animation-delay: 0.2s;
+}
+
+/* Dropdown Animation */
 .dropdown:hover .dropdown-menu {
     display: block;
 }
