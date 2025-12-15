@@ -15,18 +15,74 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Close Modal on ESC key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeFullscreen();
+    });
+
+    // Close Modal on Click Outside Image
+    const modal = document.getElementById('image-modal');
+    if (modal) {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal || e.target.closest('.relative') === null) { // Klik di background hitam
+                closeFullscreen();
+            }
+        });
+    }
+
     loadData();
 });
 
-// --- RENDER HERO (GAMBAR SLIDER, TEKS STATIS + TOMBOL LINK) ---
+// --- LOGIKA MODAL FULLSCREEN (LIGHTBOX) ---
 
+function openFullscreen(imageSrc) {
+    const modal = document.getElementById('image-modal');
+    const modalImg = document.getElementById('fullscreen-image');
+    
+    if (modal && modalImg) {
+        modalImg.src = imageSrc;
+        modal.classList.remove('hidden');
+        
+        // Sedikit delay agar animasi fade-in berjalan halus
+        setTimeout(() => {
+            modal.classList.remove('opacity-0');
+            modalImg.classList.remove('scale-95');
+            modalImg.classList.add('scale-100');
+        }, 10);
+        
+        // Matikan scroll pada body
+        document.body.classList.add('overflow-hidden');
+    }
+}
+
+function closeFullscreen() {
+    const modal = document.getElementById('image-modal');
+    const modalImg = document.getElementById('fullscreen-image');
+    
+    if (modal && modalImg) {
+        // Animasi keluar
+        modal.classList.add('opacity-0');
+        modalImg.classList.remove('scale-100');
+        modalImg.classList.add('scale-95');
+        
+        setTimeout(() => {
+            modal.classList.add('hidden');
+            modalImg.src = ''; // Reset src agar tidak memakan memori
+        }, 300); // Sesuaikan dengan durasi transition CSS (300ms)
+
+        // Hidupkan kembali scroll body
+        document.body.classList.remove('overflow-hidden');
+    }
+}
+
+
+// --- RENDER HERO ---
 function renderHero(slides) {
     const bgWrapper = document.getElementById('hero-bg-wrapper');
     const staticContent = document.getElementById('hero-static-content');
     
     if (!bgWrapper || !staticContent || slides.length === 0) return;
 
-    // 1. Render Background Images ke Swiper
     bgWrapper.innerHTML = '';
     slides.forEach(slide => {
         bgWrapper.innerHTML += `
@@ -36,7 +92,6 @@ function renderHero(slides) {
         `;
     });
 
-    // 2. Render Teks Statis & Tombol Link
     const content = slides[0]; 
     staticContent.innerHTML = `
         <h1 class="text-white text-3xl md:text-5xl lg:text-6xl font-black leading-tight tracking-[-0.033em] drop-shadow-lg">
@@ -45,7 +100,6 @@ function renderHero(slides) {
         <p class="text-white text-sm md:text-lg font-normal leading-normal drop-shadow-md">
             ${content.subtitle}
         </p>
-        
         <a href="#work" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors shadow-lg mt-4">
             <span class="truncate">${content.ctaText}</span>
         </a>
@@ -54,26 +108,29 @@ function renderHero(slides) {
     initHeroSwiper();
 }
 
-// --- RENDER PRODUK ---
-// --- RENDER PRODUK (KARTU LEBIH BESAR) ---
+// --- RENDER PRODUK (DENGAN KLIK FULLSCREEN) ---
 function createProductSlide(product) {
     return `
         <div class="swiper-slide h-auto p-1">
-            <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg h-full flex flex-col group cursor-pointer hover:shadow-2xl transition-all duration-300">
-                <div class="relative overflow-hidden aspect-[3/4]">
+            <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg h-full flex flex-col group transition-all duration-300 hover:shadow-2xl">
+                <div class="relative overflow-hidden aspect-[3/4] cursor-zoom-in" onclick="openFullscreen('${product.image}')">
                     <img src="${product.image}" alt="${product.alt || product.name}" 
                          class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80"></div>
-                    <div class="absolute bottom-0 left-0 p-5 w-full">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 pointer-events-none"></div>
+                    <div class="absolute bottom-0 left-0 p-5 w-full pointer-events-none">
                         <p class="text-white text-lg font-bold leading-tight drop-shadow-md translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
                             ${product.name}
                         </p>
+                    </div>
+                    
+                    <div class="absolute top-4 right-4 bg-black/30 backdrop-blur-md p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                        <span class="material-symbols-outlined text-white text-sm">fullscreen</span>
                     </div>
                 </div>
             </div>
         </div>
     `;
-}           
+}
 
 function renderProductSlides(products) {
     const wrapper = document.getElementById('product-wrapper');
@@ -89,8 +146,9 @@ function createAboutSlide(item) {
         <div class="swiper-slide">
             <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden mx-1 my-1">
                 <div class="grid md:grid-cols-2 gap-0">
-                    <div class="w-full h-64 md:h-[400px] relative overflow-hidden">
+                    <div class="w-full h-64 md:h-[400px] relative overflow-hidden group cursor-zoom-in" onclick="openFullscreen('${item.image}')">
                         <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="${item.image}" alt="${item.title}"/>
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
                     </div>
                     <div class="flex flex-col justify-center p-8 md:p-12 gap-4">
                         <div class="w-12 h-1 bg-primary rounded-full mb-2"></div>
