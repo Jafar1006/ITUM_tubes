@@ -113,7 +113,9 @@ function createProductSlide(product) {
     return `
         <div class="swiper-slide h-auto p-1">
             <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg h-full flex flex-col group transition-all duration-300 hover:shadow-2xl">
-                <div class="relative overflow-hidden aspect-[3/4] cursor-zoom-in" onclick="openFullscreen('${product.image}')">
+                
+                <div class="relative overflow-hidden aspect-[3/4] cursor-zoom-in touch-manipulation" onclick="openFullscreen('${product.image}')">
+                    
                     <img src="${product.image}" alt="${product.alt || product.name}" 
                          class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 pointer-events-none"></div>
@@ -191,6 +193,15 @@ function initProductSwiper() {
         slidesPerView: 1.2,
         spaceBetween: 20,
         grabCursor: true,
+        
+        // --- PERBAIKAN KHUSUS MOBILE ---
+        // Mencegah Swiper memblokir klik saat terjadi sentuhan kecil
+        preventClicks: false,
+        preventClicksPropagation: false,
+        touchStartPreventDefault: false, 
+        threshold: 10, // Klik baru dianggap 'swipe' jika jari bergeser lebih dari 10px
+        // -------------------------------
+
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
