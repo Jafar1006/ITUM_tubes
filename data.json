@@ -8,8 +8,8 @@
     {
       "id": 1,
       "image": "assets/section1.jpeg",
-      "title": "Artfully Crafted Floral Designs",
-      "subtitle": "Welcome to Zaidan Orchid, where every petal tells a story. Discover our passion for creating beautiful moments with nature's finest.",
+      "title": "Pesona Anggrek Langsung dari Kebun",
+      "subtitle": "Selamat datang di Zaidan Orchid.Temukan koleksi anggrek rawatan terbaik dengan akar kuat dan bunga memikat, siap untuk mempercantik halaman dan hari-hari Anda.",
       "ctaText": "Explore Our Gallery"
     },
     {
@@ -18,6 +18,20 @@
       "title": "Nature's Elegance in Your Home",
       "subtitle": "Bring the serenity of nature indoors with our premium orchid collection. Hand-picked and cared for with love.",
       "ctaText": "View Collections"
+    },
+    {
+      "id": 3,
+      "image": "assets/section3.jpeg",
+      "title": "Pesona Anggrek Langsung dari Kebun",
+      "subtitle":"Selamat datang di Zaidan Orchid.Temukan koleksi anggrek rawatan terbaik dengan akar kuat dan bunga memikat, siap untuk mempercantik halaman dan hari-hari Anda.",
+      "ctaText":"Explore Our Gallery"
+    },
+    {
+      "id": 3,
+      "image": "assets/section4.jpeg",
+      "title": "Pesona Anggrek Langsung dari Kebun",
+      "subtitle":"Selamat datang di Zaidan Orchid.Temukan koleksi anggrek rawatan terbaik dengan akar kuat dan bunga memikat, siap untuk mempercantik halaman dan hari-hari Anda.",
+      "ctaText":"Explore Our Gallery"
     }
   ],
   "socialLinks": [
