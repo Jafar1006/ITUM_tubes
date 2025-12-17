@@ -100,7 +100,7 @@ function renderHero(slides) {
         <p class="text-white text-sm md:text-lg font-normal leading-normal drop-shadow-md">
             ${content.subtitle}
         </p>
-        <a href="#work" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors shadow-lg mt-4">
+        <a href="#tentangkami" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors shadow-lg mt-4">
             <span class="truncate">${content.ctaText}</span>
         </a>
     `;
