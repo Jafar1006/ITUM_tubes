@@ -90,6 +90,18 @@
       "name" : "Dendrobium Serratilabium",
       "image" : "assets/DendrobiumSerratilabium.jpg",
       "alt" : "Anggrek Dendrobium Serratilabium dengan warna kuning yang mekar indah."
+    },
+    {
+      "id" : 9,
+      "name" : "Cattleya Forbesii",
+      "image" : "assets/CattleyaForbesii.jpg",
+      "alt" : "Anggrek Cattleya Forbesii dengan warna merah muda indah."
+    },
+    {
+      "id" : 10,
+      "name" : "Cattleya Aurantiaca",
+      "image" : "assets/CattleyaAurantiaca.jpg",
+      "alt" : "Anggrek Cattleya Aurantiaca dengan warna orange cerah yang indah."
     }
   ],
   "aboutSlides": [
