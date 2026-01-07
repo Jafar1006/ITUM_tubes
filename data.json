@@ -27,7 +27,7 @@
       "ctaText":"Explore Our Gallery"
     },
     {
-      "id": 3,
+      "id": 4,
       "image": "assets/section4.jpeg",
       "title": "Pesona Anggrek Langsung dari Kebun",
       "subtitle":"Selamat datang di Zaidan Orchid.Temukan koleksi anggrek rawatan terbaik dengan akar kuat dan bunga memikat, siap untuk mempercantik halaman dan hari-hari Anda.",
@@ -80,6 +80,16 @@
       "name": "Pescatorea Coronaria",
       "image": "assets/PescatoreaCoronaria.jpg",
       "alt": "Anggrek Pescatorea Coronaria dengan warna ungu yang khas."
+    },{
+      "id": 7,
+      "name": "Trichopillia Turialbae",
+      "image": "assets/TrichopilliaTurialbae.jpg",
+      "alt": "Anggrek Trichopillia Turialbae dengan warna putih yang khas."
+    },{
+      "id" : 8,
+      "name" : "Dendrobium Serratilabium",
+      "image" : "assets/DendrobiumSerratilabium.jpg",
+      "alt" : "Anggrek Dendrobium Serratilabium dengan warna kuning yang mekar indah."
     }
   ],
   "aboutSlides": [
