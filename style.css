@@ -1,28 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
 
+/* --- 1. SETUP DASAR --- */
+html {
+    scroll-behavior: smooth; /* Scroll halus */
+}
+
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-/* Custom Navigation Swiper */
+/* --- 2. ANIMASI REVEAL (MUNCUL SAAT SCROLL) --- */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- 3. ANIMASI NAVIGASI SWIPER --- */
 .swiper-button-next, .swiper-button-prev {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.95);
     color: #363E1B !important;
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
 .swiper-button-next:after, .swiper-button-prev:after {
     font-size: 18px !important;
-    font-weight: bold;
+    font-weight: 800;
 }
 
 .swiper-button-next:hover, .swiper-button-prev:hover {
     background-color: #363E1B;
     color: white !important;
+    transform: scale(1.1);
 }
 
 .dark .swiper-button-next, .dark .swiper-button-prev {
@@ -32,23 +50,43 @@ body {
 
 .swiper-pagination-bullet-active {
     background-color: #363E1B !important;
+    width: 20px !important;
+    border-radius: 4px !important;
+    transition: width 0.3s ease;
 }
 
-/* Animasi Text Hero Slide */
+/* --- 4. ANIMASI TEXT HERO --- */
 @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
+    from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-.animate-fadeInUp {
+.animate-title {
+    opacity: 0;
     animation: fadeInUp 0.8s ease-out forwards;
 }
 
-.delay-100 {
-    animation-delay: 0.2s;
+.animate-subtitle {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.3s forwards;
 }
 
-/* Dropdown Animation */
+.animate-btn {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.6s forwards;
+}
+
+/* --- 5. ANIMASI HOVER CARD --- */
+/* Membuat kartu produk sedikit "naik" saat di hover */
+.hover-scale-up {
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hover-scale-up:hover {
+    transform: translateY(-8px);
+}
+
+/* Dropdown Animation (bawaan) */
 .dropdown:hover .dropdown-menu {
     display: block;
 }
