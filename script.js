@@ -1,4 +1,15 @@
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from '@vercel/analytics/next';
+ 
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <Component {...pageProps} />
+      <Analytics />
+    </>
+  );
+}
+ 
+export default MyApp;
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Mobile Menu Logic
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
