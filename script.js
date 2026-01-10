@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next"
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Mobile Menu Logic
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
